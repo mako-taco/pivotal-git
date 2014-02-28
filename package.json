@@ -1,10 +1,11 @@
 {
-  "name": "node-git-pivotal",
-  "version": "0.0.0",
+  "name": "git-pivotal",
+  "version": "0.0.1",
   "description": "An integration for Git & Pivotal Tracker",
-  "main": "index.js",
+  "main": "git-pivotal.js",
   "scripts": {
-    "test": "make test"
+    "test": "make test",
+    "post-install": "make install"
   },
   "repository": {
     "type": "git",
@@ -24,6 +25,8 @@
   "dependencies": {
     "mocha": "~1.17.1",
     "should": "~3.1.3",
-    "pivotal": "~0.2.0"
+    "pivotal": "~0.2.0",
+    "when": "~2.8.0",
+    "colors": "~0.6.2"
   }
 }
