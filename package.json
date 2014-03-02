@@ -28,6 +28,6 @@
     "pivotal": "~0.2.0",
     "when": "~2.8.0",
     "colors": "~0.6.2",
-    "nodegit": "~0.1.0"
+    "superagent": "~0.16.0"
   }
 }
