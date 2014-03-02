@@ -35,5 +35,5 @@
     "git-finish": "bin/git-finish",
     "git-deliver": "bin/git-deliver",
     "git-list": "bin/git-list"
-  },
+  }
 }
