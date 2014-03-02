@@ -1,15 +1,15 @@
 {
   "name": "pivotal-git",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "An integration for Git & Pivotal Tracker",
-  "main": "git-pivotal.js",
+  "main": "pivotal-git.js",
   "scripts": {
     "test": "make test",
     "post-install": "make install"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/mako-taco/node-git-pivotal.git"
+    "url": "git://github.com/mako-taco/pivotal-git.git"
   },
   "keywords": [
     "git",
@@ -20,7 +20,7 @@
   "author": "mako-taco",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mako-taco/node-git-pivotal/issues"
+    "url": "https://github.com/mako-taco/pivotal-git/issues"
   },
   "dependencies": {
     "mocha": "~1.17.1",
