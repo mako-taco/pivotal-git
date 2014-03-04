@@ -1,6 +1,6 @@
 {
   "name": "pivotal-git",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "An integration for Git & Pivotal Tracker",
   "main": "pivotal-git.js",
   "scripts": {
