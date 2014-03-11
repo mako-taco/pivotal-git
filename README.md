@@ -6,10 +6,13 @@ An integration for Git and Pivotal Tracker, written in node. Install it with
 
 ## git start
 ## git list
+
+This lists out all the stories you have pending that you have started via `git start`.
+
 ## git finish
 ## git deliver
 
-## git story [find <search> | ls]
+## git story find <search>
 
 Learn about PT stories!
 
@@ -31,9 +34,5 @@ All args after find are joined together with a space. This means `git story find
 * `git story find _mine_` will list all of my stories.
 * `git story find on-site` will list all stoires that match "on-site".
 
-
-### git story ls: lists our all the stories you have running.
-
-This lists out all the stories you have pending that you have started via `git start`.
 
 
