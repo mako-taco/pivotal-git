@@ -35,6 +35,7 @@
     "git-finish": "bin/git-finish",
     "git-deliver": "bin/git-deliver",
     "git-list": "bin/git-list",
-    "git-story": "bin/git-story"
+    "git-story": "bin/git-story",
+    "git-roll": "bin/git-roll"
   }
 }
