@@ -12,9 +12,13 @@ This lists out all the stories you have pending that you have started via `git s
 ## git finish
 ## git deliver
 
-## git roll <branch> [msg]
+## git roll [-r command] <branch> [msg]
 
 Rolls (read merge via a squash) provided branch name into current branch commiting it with provided message.
+
+* <branch>: the branch to be rolled into your current branch.
+* [msg]: the message to be used for the merge commit. Optionaly can be entered via a later prompt.
+* [-r command]: run custom command in <branch> before merging. If this command exits with a code other than 0 the roll will stop.
 
 ## git story find <search>
 
