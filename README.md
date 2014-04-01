@@ -12,6 +12,10 @@ This lists out all the stories you have pending that you have started via `git s
 ## git finish
 ## git deliver
 
+## git roll <branch> [msg]
+
+Rolls (read merge via a squash) provided branch name into current branch commiting it with provided message.
+
 ## git story find <search>
 
 Learn about PT stories!
