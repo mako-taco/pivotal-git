@@ -16,7 +16,7 @@ This lists out all the stories you have pending that you have started via `git s
 
 Rolls (read merge via a squash) provided branch name into current branch commiting it with provided message.
 
-* <branch>: the branch to be rolled into your current branch.
+* \<branch\>: the branch to be rolled into your current branch.
 * [msg]: the message to be used for the merge commit. Optionaly can be entered via a later prompt.
 * [-r command]: run custom command in <branch> before merging. If this command exits with a code other than 0 the roll will stop.
 
@@ -38,14 +38,18 @@ All args after find are joined together with a space. This means `git story find
 * `git story find _mine_` will list all of my stories.
 * `git story find on-site` will list all stoires that match "on-site".
 
-## git cleanup \<branches...\>
+## git cleanup [[-D|-d] -K -r \<remote\>] \<branches...\>
 
 Removes both the local and remote copies of specified branch(es).
 
-Assumes remote is 'origin'.
+* -D: Delete a branch irrespective of its merged status.
+* -d: (default) The branch must be fully merged in its upstream branch, or in HEAD if no upstream was set
+* -K: force remote KILL even if local branch is not found or can't be deleted.
+* -r \<remote\>: (default:origin) lets you set a custom remote.
 
 **Examples**
 * `git cleanup myTopicBranch` will delete the local branch _myTopicBranch_ and the remote branch _origin/myTopicBranch_
+* `git cleanup -D -K -r fork idea other-idea` where _idea_ is a local unmerged branch and _other-idea_ is only remote this command will delete _idea_, _fork/idea_, _fork/other-idea_.
 
 
 
